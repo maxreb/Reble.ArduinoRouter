@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- NuGet Package Metadata -->
+		<PackageId>Reble.ArduinoRouter</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Reble</Authors>
+		<Description>.NET client for Arduino Router - a MessagePack RPC router for Arduino devices</Description>
+		<PackageTags>arduino;uno-q;arduino-router;messagepack;rpc;iot;embedded</PackageTags>
+		<PackageProjectUrl>https://github.com/arduino/arduino-router</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/arduino/arduino-router</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="MessagePack" Version="3.1.4" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@Reble.ArduinoBridge.ApiExample_HostAddress = http://localhost:5017
+
+GET {{Reble.ArduinoBridge.ApiExample_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
