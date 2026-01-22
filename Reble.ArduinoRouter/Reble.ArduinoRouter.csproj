@@ -5,17 +5,28 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<!-- NuGet Package Metadata -->
 		<PackageId>Reble.ArduinoRouter</PackageId>
 		<Version>1.0.0</Version>
-		<Authors>Reble</Authors>
-		<Description>.NET client for Arduino Router - a MessagePack RPC router for Arduino devices</Description>
+		<Authors>Max Reble</Authors>
+		<Description>.NET Arduino Router Client
+		A MessagePack RPC router for Arduino devices with MPUs like the UNO Q</Description>
 		<PackageTags>arduino;uno-q;arduino-router;messagepack;rpc;iot;embedded</PackageTags>
-		<PackageProjectUrl>https://github.com/arduino/arduino-router</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/arduino/arduino-router</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/maxreb/Reble.ArduinoRouter</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/maxreb/Reble.ArduinoRouter</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+		<ContinuousIntegrationBuild Condition="'$(Configuration)' == 'Release'">true</ContinuousIntegrationBuild>
+		<Deterministic>true</Deterministic>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -23,7 +34,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="MessagePack" Version="3.1.4" />
+		<PackageReference Include="MessagePack" Version="3.1.4" />
 	</ItemGroup>
 
 </Project>
